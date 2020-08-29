@@ -27,8 +27,8 @@ namespace SalesWebMvc.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    Email = table.Column<string>(nullable: true),
                     Name = table.Column<string>(nullable: true),
+                    Email = table.Column<string>(nullable: true),
                     BirthDate = table.Column<DateTime>(nullable: false),
                     BaseSalary = table.Column<double>(nullable: false),
                     DepartmentId = table.Column<int>(nullable: false)
