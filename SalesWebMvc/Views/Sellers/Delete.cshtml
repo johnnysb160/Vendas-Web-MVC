@@ -37,12 +37,18 @@
         <dd>
             @Html.DisplayFor(model => model.BaseSalary)
         </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Department)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Department.Name)
+        </dd>
     </dl>
 
     <form asp-action="Delete">
         <input type="hidden" asp-for="Id" />
         <input type="submit" value="Delete" class="btn btn-danger" />
-        <a asp-action="Index"><input type="button" value="Back to List"  /></a>
+        <a asp-action="Index" class="btn btn-default">Back to List</a>
     </form>
     
 
